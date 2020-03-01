@@ -23,4 +23,7 @@ function selectionSort(arr) {
   return arr
 }
 
-console.log(selectionSort(nums));
+console.log('Сортировка выбором')
+console.log('Входной массив: ', nums)
+console.log('Отсортированный массив: ', selectionSort(nums));
+console.log('-----------------------------');

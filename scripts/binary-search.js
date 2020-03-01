@@ -37,4 +37,6 @@ const binarySearch = (num) => {
   return null;
 };
 
+console.log('Бинарный поиск')
 binarySearch(100);
+console.log('-----------------------------');
