@@ -15,6 +15,8 @@ const mainBox = {
   cat: 1
 }
 
+const arr = [1, 4, 99, 15];
+
 function lookForKey(obj) {
   for (let item in obj) {        
     if (typeof obj[item] === 'object') {
@@ -34,7 +36,27 @@ function factorial(num) {
   }
 }
 
+function sum(arr) {
+  return arr.length ? arr[0] + sum(arr.slice(1)) : 0;
+}
+
+function countElements(arr) {
+  return arr.length ? 1 + countElements(arr.slice(1)) : 0;  
+}
+
+function maxValue(arr) {
+  let result;
+
+  // TODO
+
+  return result;
+}
+
 console.log('Recursion');
 lookForKey(mainBox);
 console.log('Factorial of number 5 is: ', factorial(5));
+console.log('Numbers array: ', arr);
+console.log('Recursive summ: ', sum(arr));
+console.log('Recursive length: ', countElements(arr));
+console.log('Reursive max value: ', maxValue(arr));
 console.log('-----------------------------');
